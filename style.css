@@ -56,18 +56,21 @@ body {
 	font-family: 'Sora', sans-serif;
 	font-style: italic;
 	color: #fff;
-	font-size: 2rem;
+	font-size: 4.4rem;
 }
 .header__text {
-	margin-top: 20px;
+	margin-top: 3em;
+	font-size: 2.3rem;
+	font-weight: 300;
 	color: #fff;
 }
 .header__btn {
 	position: absolute;
-	transform: translateX(-50%);
-	font-size: 35px;
-	bottom: 5px;
+	font-size: 20px;
+	padding: 0.5em;
+	bottom: 20px;
 	color: #fff;
+	z-index: 1000;
 }
 .mobile {
 	position: fixed;
@@ -102,6 +105,10 @@ body {
 	font-size: 2.4rem;
 	height: 100vh;
 }
+.nav__desktop {
+	position: none;
+}
+
 .logo__box {
 	position: fixed;
 	font-size: 25px;
@@ -123,4 +130,61 @@ body {
 .section-test {
 	height: 100vh;
 	background-color: gray;
+}
+
+/* MEDIA */
+@media (min-width: 576px) {
+	.header__title {
+		font-size: 5.2rem;
+	}
+}
+@media (min-width: 768px) {
+	.header__title {
+		font-size: 5.8rem;
+	}
+}
+@media (min-width: 992px) {
+	.hamburger {
+		display: none;
+	}
+	.logo__box {
+		display: none;
+	}
+	.header__title {
+		font-size: 6.2rem;
+	}
+	.nav__desktop {
+		position: absolute;
+		top: 10px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+	}
+	.nav__items {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-left: 500px;
+		width: 50%;
+	}
+	.nav__item {
+		display: inline-block;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+		text-decoration: none;
+		color: #fff;
+		font-size: 2rem;
+		transition: color 0.3s;
+		margin-right: 3em;
+		padding: 1em 0.5em;
+	}
+	.deskop__box {
+		margin-left: 1.5em;
+		font-size: 2em;
+		font-family: 'Sora', sans-serif;
+		color: #fff;
+	}
 }
