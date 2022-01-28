@@ -12,6 +12,14 @@ body {
 	font-size: 1.6rem;
 	/* background-color: #333; */
 }
+.wrapper {
+	margin: 0 auto;
+	max-width: 1200px;
+}
+.hamburger {
+	position: fixed;
+}
+
 .header {
 	position: relative;
 	display: flex;
@@ -45,18 +53,26 @@ body {
 	z-index: 2;
 }
 .header__title {
-	font-family: 'Dosis', sans-serif;
-
+	font-family: 'Sora', sans-serif;
+	font-style: italic;
 	color: #fff;
-	font-size: 2.6rem;
+	font-size: 2rem;
 }
 .header__text {
+	margin-top: 20px;
 	color: #fff;
 }
-
+.header__btn {
+	position: absolute;
+	transform: translateX(-50%);
+	font-size: 35px;
+	bottom: 5px;
+	color: #fff;
+}
 .mobile {
 	position: fixed;
-	width: 100vw;
+	top: 0;
+	width: 100%;
 	height: 100vh;
 	background-color: rgb(2, 43, 2);
 	transform: translateX(100%);
@@ -67,19 +83,43 @@ body {
 	transform: translateX(0);
 }
 .mobile__items {
+	position: fixed;
+	top: 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: center;
 	height: 100vh;
+	width: 100%;
 }
 .mobile__item {
+	position: relative;
+	display: block;
+	margin: 0.5em 0;
+	padding: 0.5em 2em;
 	color: #fff;
 	text-decoration: none;
-	font-size: 2rem;
-	padding: 1em;
-	margin: 1.2em;
+	font-size: 2.4rem;
+	height: 100vh;
 }
+.logo__box {
+	position: fixed;
+	font-size: 25px;
+	top: 15px;
+	left: 10px;
+	padding: 0.5em;
+	z-index: 5;
+}
+.logo__text {
+	font-family: 'Sora', sans-serif;
+	color: fff;
+}
+.fa-tree {
+	margin-right: 10px;
+	font-size: 2rem;
+	color: #fff;
+}
+
 .section-test {
 	height: 100vh;
 	background-color: gray;
