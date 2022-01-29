@@ -23,11 +23,16 @@
 			href="https://fonts.googleapis.com/css2?family=Sora:wght@100&display=swap"
 			rel="stylesheet"
 		/>
-
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
 		<script
 			src="https://kit.fontawesome.com/ce63988251.js"
 			crossorigin="anonymous"
 		></script>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+		/>
 		<link href="hamburgers.css" rel="stylesheet" />
 		<link rel="stylesheet" href="style.css" />
 	</head>
@@ -43,9 +48,9 @@
 			<nav class="mobile">
 				<div class="mobile__items">
 					<a href="#aboutus" class="mobile__item">O nas</a>
-					<a href="#projects" class="mobile__item">Realizacje</a
-					><a href="#team" class="mobile__item">Zespół</a>
-					<a href="#shop" class="mobile__item">Sklep</a
+					<a href="#offert" class="mobile__item">Oferta</a
+					><a href="#projects" class="mobile__item">Projekty</a>
+					<a href="#team" class="mobile__item">Zespół</a
 					><a href="#contact" class="mobile__item">Kontakt</a>
 				</div>
 			</nav>
@@ -56,9 +61,9 @@
 				</div>
 				<div class="nav__items">
 					<a href="#aboutus" class="nav__item">O nas</a>
-					<a href="#projects" class="nav__item">Realizacje</a>
-					<a href="#offers" class="nav__item">Oferta</a>
-					<a href="#ourteam" class="nav__item">Nasz zespół</a>
+					<a href="#offert" class="nav__item">Oferta</a>
+					<a href="#projects" class="nav__item">Projekty</a>
+					<a href="#team" class="nav__item">Zespół</a>
 					<a href="#contact" class="nav__item">Kontakt</a>
 				</div>
 			</nav>
@@ -75,9 +80,167 @@
 				<p class="logo__text">OGarden</p>
 			</div>
 		</header>
+		<main>
+			<h2 class="section__heading section-heading" id="aboutus">O nas</h2>
+			<div class="section__aboutus wrapper">
+				<p>
+					Jesteśmy zespołem, który dzięki nieszablonowości, umiejętności
+					łączenia żywiołów oraz wyjątkowej wrażliwości na piękno jest w stanie
+					wykonywać i wcielać w życie projekty marzeń. Od wielu lat uważnie
+					obserwujemy stale zmieniające się trendy, które dyktują nową modę w
+					architekturze ogrodowej. Doskonale też wiemy, że pomimo tych zmian
+					ogród cały czas pozostaje dla naszych Klientów przestrzenią pełną
+					spokoju, pozwalającą oderwać się od codzienności, oddać chwili
+					zapomnienia i pełnego odprężenia. Bliskość natury – w jej różnorodnym
+					wydaniu – sprzyja realizacji tego założenia. Pragniemy, naszą
+					codzienną praca, przyczyniać się do realizacji Państwa marzeń
+				</p>
+				<p>
+					Niezależnie od tego, czy pragną nam Państwo powierzyć realizację już
+					istniejącego projektu, czy też budowę ogrodu od podstaw, włącznie z
+					wykonaniem jego planów zagospodarowania, nasze działania będą
+					całkowicie dostosowane do indywidualnych potrzeb.
+				</p>
+			</div>
+			<h2 class="section__heading section-heading" id="offert">Oferta</h2>
+			<table class="section__table">
+				<thead>
+					<tr>
+						<th>Usługa</th>
+						<th>Podstawowy</th>
+						<th>Średni</th>
+						<th>Pełny</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Darmowa wycena</td>
+						<td><i class="fas fa-check"></i></td>
+						<td><i class="fas fa-check"></td>
+						<td><i class="fas fa-check"></i></td>
+					</tr>
+					<tr>
+						<td>Inwentaryzacja</td>
+						<td><i class="fas fa-check"></td>
+						<td><i class="fas fa-check"></td>
+						<td><i class="fas fa-check"></td>
+					</tr>
+					<tr>
+						<td>Projekt koncepcyjny</td>
+						<td><i class="fas fa-times"></td>
+						<td><i class="fas fa-check"></td>
+						<td><i class="fas fa-check"></td>
+					</tr>
+					<tr>
+						<td>Fotorealistyczna prezentacja</td>
+						<td><i class="fas fa-times"></td>
+						<td><i class="fas fa-check"></td>
+						<td><i class="fas fa-check"></td>
+					</tr>
+					<tr>
+						<td>Wytyczne projektów</td>
+						<td><i class="fas fa-times"></td>
+						<td><i class="fas fa-times"></td>
+						<td><i class="fas fa-check"></td>
+					</tr>
+					<tr>
+						<td>Nawodnienie</td>
+						<td><i class="fas fa-times"></td>
+						<td><i class="fas fa-times"></td>
+						<td><i class="fas fa-check"></td>
+					</tr>
+					<tr>
+						<td>Transport</td>
+						<td><i class="fas fa-times"></td>
+						<td><i class="fas fa-times"></td>
+						<td><i class="fas fa-check"></td>
+					</tr>
+					<tr>
+						<td>Cena</td>
+						<td><p>999 PLN</p></td>
+						<td><p>1999 PLN</p></td>
+						<td><p>2999 PLN</p></td>
+					</tr>
+				</tbody>
+			</table>
+			<h2 class="section__heading section-heading" id="team">Zespół</h2>
+			<div class="section__team karuzela">
+				<div class="team__box">
+					<div class="team__body">
+						<img src="img/oliwia.jpg" class="team__img" alt="" />
 
-		<div class="section-test wrapper">la<i class="fas fa-tree"></i></div>
+						<div class="team__name">
+							Oliwia
+							<p class="team__info">CEO</p>
+						</div>
+					</div>
+					<div class="team__text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+						cupiditate corrupti optio eos eligendi sint soluta quas, inventore
+						laboriosam excepturi?
+					</div>
+				</div>
+				<div class="team__box">
+					<div class="team__body">
+						<img src="img/beata.jpg" class="team__img" alt="" />
 
-		<script src="/script.js"></script>
+						<div class="team__name">
+							Beata
+							<p class="team__info">Projektant</p>
+						</div>
+					</div>
+					<div class="team__text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+						cupiditate corrupti optio eos eligendi sint soluta quas, inventore
+						laboriosam excepturi?
+					</div>
+				</div>
+				<div class="team__box">
+					<div class="team__body">
+						<img src="img/przemas-logistyk.jpg" class="team__img" alt="" />
+
+						<div class="team__name">
+							Przemek
+							<p class="team__info">Logistyk</p>
+						</div>
+					</div>
+					<div class="team__text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+						cupiditate corrupti optio eos eligendi sint soluta quas, inventore
+						laboriosam excepturi?
+					</div>
+				</div>
+				<div class="team__box">
+					<div class="team__body">
+						<img src="img/ogrodnik.jpg" class="team__img" alt="" />
+
+						<div class="team__name">
+							Janusz
+							<p class="team__info">Botanik</p>
+						</div>
+					</div>
+					<div class="team__text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+						cupiditate corrupti optio eos eligendi sint soluta quas, inventore
+						laboriosam excepturi?
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<script
+			type="text/javascript"
+			src="//code.jquery.com/jquery-1.11.0.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+		></script>
+		<script src="/js/slick.js"></script>
+		<script src="js/script.js"></script>
 	</body>
 </html>
