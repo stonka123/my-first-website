@@ -11,4 +11,12 @@ const showNav = () => {
 		});
 	});
 };
+
+const checkWhiteSection = () => {
+	if (window.scrollY > 690) {
+		console.log('o juz!');
+	}
+};
+
+checkWhiteSection();
 burgerBtn.addEventListener('click', showNav);

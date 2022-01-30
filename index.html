@@ -39,7 +39,7 @@
 	<body>
 		<button class="hamburger hamburger--spin" type="button">
 			<span class="hamburger-box">
-				<span class="hamburger-inner"></span>
+				<span class="hamburger-inner white-section"></span>
 			</span>
 		</button>
 		<header class="header">
@@ -82,8 +82,8 @@
 		</header>
 		<main>
 			<h2 class="section__heading section-heading" id="aboutus">O nas</h2>
-			<div class="section__aboutus wrapper">
-				<p>
+			<div class="section__aboutus">
+				<div class="wrapper"><p>
 					Jesteśmy zespołem, który dzięki nieszablonowości, umiejętności
 					łączenia żywiołów oraz wyjątkowej wrażliwości na piękno jest w stanie
 					wykonywać i wcielać w życie projekty marzeń. Od wielu lat uważnie
@@ -103,7 +103,7 @@
 				</p>
 			</div>
 			<h2 class="section__heading section-heading" id="offert">Oferta</h2>
-			<table class="section__table">
+			<table class="section__table wrapper">
 				<thead>
 					<tr>
 						<th>Usługa</th>
@@ -164,7 +164,7 @@
 				</tbody>
 			</table>
 			<h2 class="section__heading section-heading" id="team">Zespół</h2>
-			<div class="section__team karuzela">
+			<div class="section__team">
 				<div class="team__box">
 					<div class="team__body">
 						<img src="img/oliwia.jpg" class="team__img" alt="" />
@@ -226,7 +226,28 @@
 					</div>
 				</div>
 			</div>
+		
 		</main>
+		<h2 class="section__heading section-heading" id="contact">Kontakt</h2>
+
+		<section id ="contact" class="contact">
+
+			<div class="wrapper">
+				<form class="contact__form">
+					<div class="contact__form-top">
+					
+						<input type="text" class="contact__form-input" id="name"placeholder="Imie i nazwisko">
+						<input type="text" class="contact__form-input" id="email"placeholder="Adres e-mail">
+					</div>
+					<textarea  id="msg" class="contact__form-textarea"placeholder="Wiadomość"></textarea>
+					<button type="submit" class="contact__form-btn">Wyślij</button>
+			</div>
+
+
+
+		</section>
+			
+			</div>
 
 		<script
 			type="text/javascript"

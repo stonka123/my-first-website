@@ -10,6 +10,7 @@ html {
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.6rem;
+
 	/* background-color: #333; */
 }
 .wrapper {
@@ -19,6 +20,7 @@ body {
 .hamburger {
 	position: fixed;
 }
+/* test */
 
 .header {
 	position: relative;
@@ -28,7 +30,6 @@ body {
 	flex-direction: column;
 	padding: 2em;
 	height: 100vh;
-	width: 100%;
 	text-align: center;
 	color: #fff;
 	overflow: hidden;
@@ -45,8 +46,8 @@ body {
 .header__shadow {
 	position: absolute;
 	background-color: rgba(0, 0, 0, 0.6);
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 	z-index: 0;
 }
 .header__box {
@@ -153,18 +154,16 @@ body {
 .section__aboutus {
 	letter-spacing: 1px;
 	font-weight: 500;
-	margin: 1.5em 2em;
-	text-align: center;
+	margin: 2em 2em;
 }
 .section__aboutus p {
-	padding-bottom: 3em;
+	padding-bottom: 1.5em;
 }
 
 /* offert */
 
 .section__table {
-	margin: 4em auto;
-	width: 60%;
+	margin: 2em auto;
 	background-color: #ffffff;
 	border-collapse: collapse;
 	border-width: 1px;
@@ -178,21 +177,20 @@ body {
 	border-width: 1px;
 	border-color: #419b41;
 	border-style: solid;
-	padding: 7px;
+	padding: 3px;
 	color: #333;
 }
 
 .section__table th {
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	border-width: 1px;
 	border-color: #419b41;
 	border-style: solid;
-	padding: 9px;
+	padding: 3px;
 	color: #fff;
 }
 .section__table thead {
 	background-color: #333333;
-	font-size: 1rem;
 }
 .fa-check {
 	display: block;
@@ -216,7 +214,7 @@ tbody tr td {
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
-	width: 100vw;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -260,6 +258,72 @@ tbody tr td {
 .team__info {
 	font-size: 1.5rem;
 }
+/* contact */
+.section__contact {
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+}
+.hero-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url('img/hero-section-small.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: center;
+	width: 100%;
+	height: 100vh;
+}
+.hero-shadow {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.2);
+	width: 100%;
+	height: 100vh;
+}
+
+/* contact */
+.contact {
+	/* position: relative; */
+	background-color: rgb(153, 153, 153);
+}
+.contact__form,
+.contact__form-top {
+	margin: 1.5em 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact__form-input,
+.contact__form-textarea {
+	width: 80vw;
+	margin-bottom: 1em;
+	margin: 0.5em 1em;
+	padding: 0.5em;
+	border: none;
+	border-radius: 4px;
+	font-size: 1.6rem;
+}
+.contact__form-textarea {
+	max-width: 100vw;
+	width: 80vw;
+	min-width: 150px;
+}
+.contact__form-btn {
+	align-self: flex-end;
+	padding: 1em;
+	margin: 1em;
+	width: 50%;
+	max-width: 300px;
+	color: #419b41;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+}
 
 /* MEDIA */
 @media (min-width: 576px) {
@@ -276,68 +340,68 @@ tbody tr td {
 	.section__table th {
 		font-size: 1.6rem;
 	}
-	@media (min-width: 768px) {
-		.header__title {
-			font-size: 6.6rem;
-		}
-		.header__tex {
-			font-size: 4rem;
-		}
-		.section__table td {
-			font-size: 1.8rem;
-		}
-
-		.section__table th {
-			font-size: 2rem;
-		}
+}
+@media (min-width: 768px) {
+	.header__title {
+		font-size: 6.6rem;
 	}
-	@media (min-width: 992px) {
-		.hamburger {
-			display: none;
-		}
-		.logo__box {
-			display: none;
-		}
-		.header__title {
-			font-size: 6.2rem;
-		}
-		.nav__desktop {
-			position: absolute;
-			top: 10px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			justify-content: space-between;
-			width: 100%;
-			min-height: 10vh;
-		}
-		.nav__items {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-around;
-			width: 60%;
-		}
-		.nav__item {
-			letter-spacing: 0.2rem;
-			text-decoration: none;
-			color: #fff;
-			font-weight: bold;
-			text-transform: uppercase;
-			font-size: 1.6rem;
-			padding: 0.5em;
-		}
-		.deskop__box {
-			margin-left: 1.5em;
-			font-size: 2em;
-			font-family: 'Sora', sans-serif;
-			color: #fff;
-		}
-		.section__table td {
-			font-size: 2.4rem;
-		}
+	.header__tex {
+		font-size: 4rem;
+	}
+	.section__table td {
+		font-size: 1.8rem;
+	}
 
-		.section__table th {
-			font-size: 2.6rem;
-		}
+	.section__table th {
+		font-size: 2rem;
+	}
+}
+@media (min-width: 992px) {
+	.hamburger {
+		display: none;
+	}
+	.logo__box {
+		display: none;
+	}
+	.header__title {
+		font-size: 6.2rem;
+	}
+	.nav__desktop {
+		position: absolute;
+		top: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		min-height: 10vh;
+	}
+	.nav__items {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		width: 60%;
+	}
+	.nav__item {
+		letter-spacing: 0.2rem;
+		text-decoration: none;
+		color: #fff;
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: 1.6rem;
+		padding: 0.5em;
+	}
+	.deskop__box {
+		margin-left: 1.5em;
+		font-size: 2em;
+		font-family: 'Sora', sans-serif;
+		color: #fff;
+	}
+	.section__table td {
+		font-size: 2.4rem;
+	}
+
+	.section__table th {
+		font-size: 2.6rem;
 	}
 }
