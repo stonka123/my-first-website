@@ -13,12 +13,16 @@ body {
 
 	/* background-color: #333; */
 }
+
 .wrapper {
 	margin: 0 auto;
 	max-width: 1200px;
 }
 .hamburger {
 	position: fixed;
+}
+.sticky-body {
+	overflow: hidden;
 }
 /* test */
 
@@ -74,6 +78,7 @@ body {
 	bottom: 20px;
 	color: #fff;
 	z-index: 1000;
+	text-decoration: none;
 }
 .mobile {
 	position: fixed;
@@ -107,10 +112,12 @@ body {
 	font-size: 2.4rem;
 	height: 100vh;
 }
-.nav__desktop {
-	position: none;
+.deskop__box {
+	display: none;
 }
-
+.nav__items {
+	display: none;
+}
 .logo__box {
 	position: fixed;
 	font-size: 20px;
@@ -151,7 +158,7 @@ body {
 	content: '';
 }
 .section__aboutus {
-	letter-spacing: 1px;
+	letter-spacing: 1.5px;
 	font-weight: 500;
 	margin: 2em 2em;
 }
@@ -162,6 +169,8 @@ body {
 /* offert */
 
 .section__table {
+	width: 90vw;
+	max-width: 800px;
 	margin: 2em auto;
 	background-color: #ffffff;
 	border-collapse: collapse;
@@ -203,7 +212,7 @@ body {
 td p {
 	text-align: center;
 	color: red;
-	font-size: 1.6rem;
+	font-size: 1.2rem;
 }
 tbody tr td {
 	text-align: center;
@@ -251,7 +260,7 @@ tbody tr td {
 	position: absolute;
 	bottom: 10px;
 	right: 20px;
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 }
 
 .islands__card-img-info i {
@@ -325,7 +334,7 @@ tbody tr td {
 	justify-content: center;
 	flex-wrap: wrap;
 	width: 100%;
-	margin: 0 auto;
+	margin: 2em auto;
 }
 
 .team__box {
@@ -333,9 +342,9 @@ tbody tr td {
 	flex-direction: column;
 	height: 250px;
 	width: 250px;
-	margin: 1em;
+	margin: 1.5em;
 	background-color: rgba(162, 226, 162, 0.2);
-	border-radius: 8px;
+	border-radius: 10px;
 	box-shadow: 0 1em 1em rgba(56, 158, 56, 0.5);
 	box-shadow: 0 40px 60px -6px black;
 }
@@ -352,6 +361,7 @@ tbody tr td {
 	border: 2px solid green;
 }
 .team__name {
+	letter-spacing: 1px;
 	margin-top: 20px;
 	width: 50%;
 	font-size: 2.5rem;
@@ -362,42 +372,17 @@ tbody tr td {
 	text-align: center;
 	margin: 0.5em;
 	flex-grow: 1;
-	color: #333;
 	width: 80%;
 }
 .team__info {
+	margin-top: 0.5em;
 	font-size: 1.5rem;
-}
-/* contact */
-.section__contact {
-	position: relative;
-	top: 0;
-	left: 0;
-	height: 100vh;
-	width: 100%;
-	overflow: hidden;
-}
-.hero-img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	background-image: url('img/hero-section-small.jpg');
-	background-size: cover;
-	background-position: center;
-	background-attachment: center;
-	width: 100%;
-	height: 100vh;
-}
-.hero-shadow {
-	position: absolute;
-	background-color: rgba(0, 0, 0, 0.2);
-	width: 100%;
-	height: 100vh;
+	font-weight: 200;
+	font-style: italic;
 }
 
 /* contact */
 .contact {
-	/* position: relative; */
 	background-color: rgb(153, 153, 153);
 }
 .contact__form,
@@ -419,9 +404,12 @@ tbody tr td {
 	font-size: 1.6rem;
 }
 .contact__form-textarea {
-	max-width: 100vw;
+	max-width: 80vw;
 	width: 80vw;
 	min-width: 150px;
+	max-height: 30vh;
+	height: 30vh;
+	min-height: 150px;
 }
 .contact__form-btn {
 	align-self: flex-end;
@@ -435,6 +423,10 @@ tbody tr td {
 	cursor: pointer;
 }
 /* social */
+.deskop__map {
+	display: none;
+}
+
 .social__box {
 	display: flex;
 	flex-direction: column;
@@ -453,6 +445,10 @@ tbody tr td {
 	font-size: 3rem;
 	color: #2d742d;
 }
+.fa-phone-alt {
+	font-size: 2rem;
+}
+
 .adress__box {
 	position: relative;
 	display: flex;
@@ -508,6 +504,12 @@ tbody tr td {
 	.section__table th {
 		font-size: 1.6rem;
 	}
+	td p {
+		font-size: 2rem;
+	}
+	.islands__card-img-info {
+		font-size: 1.6rem;
+	}
 }
 @media (min-width: 768px) {
 	.header__title {
@@ -522,6 +524,15 @@ tbody tr td {
 
 	.section__table th {
 		font-size: 2rem;
+	}
+	td p {
+		font-size: 2.2rem;
+	}
+	.deskop__map {
+		display: flex;
+	}
+	.social__map {
+		display: none;
 	}
 }
 @media (min-width: 992px) {
@@ -559,7 +570,30 @@ tbody tr td {
 		font-size: 1.6rem;
 		padding: 0.5em;
 	}
+	.nav__item {
+		position: relative;
+	}
+	.nav__item::before,
+	.nav__item::after {
+		content: '';
+		position: absolute;
+		width: 0;
+		bottom: 0;
+		border-bottom: 2px solid rgb(65, 155, 65);
+	}
+	.nav__item::before {
+		right: 50%;
+	}
+	.nav__item::after {
+		left: 50%;
+	}
+	.nav__item:hover::before,
+	.nav__item:hover::after {
+		transition: width 0.3s;
+		width: 50%;
+	}
 	.deskop__box {
+		display: block;
 		margin-left: 1.5em;
 		font-size: 2em;
 		font-family: 'Sora', sans-serif;
@@ -571,5 +605,20 @@ tbody tr td {
 
 	.section__table th {
 		font-size: 2.6rem;
+	}
+	.deskop__map {
+		display: flex;
+	}
+	.social__map {
+		display: none;
+	}
+
+	.media__social {
+		margin: 2em;
+		font-size: 3rem;
+	}
+	.social__adress {
+		margin: 1em;
+		font-size: 2rem;
 	}
 }

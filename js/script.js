@@ -6,6 +6,7 @@ const footYear = document.querySelector('.footer__year')
 const showNav = () => {
 	burgerBtn.classList.toggle('is-active')
 	navMobile.classList.toggle('mobile-active')
+	document.body.classList.toggle('sticky-body')
 	navMobileItem.forEach(item => {
 		item.addEventListener('click', () => {
 			navMobile.classList.remove('mobile-active')
