@@ -432,7 +432,6 @@ tbody tr td {
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
-	/* overflow: hidden; */
 }
 .media__socials {
 	display: flex;
@@ -447,12 +446,15 @@ tbody tr td {
 }
 .fa-phone-alt {
 	font-size: 2rem;
+	margin-right: 0.5em;
+	margin-bottom: 0.5em;
+	color: rgb(65, 155, 65);
 }
 
 .adress__box {
 	position: relative;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
@@ -462,6 +464,7 @@ tbody tr td {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	margin-top: 1em;
 }
 .social__adress {
 	font-size: 2rem;
@@ -617,8 +620,17 @@ tbody tr td {
 		margin: 2em;
 		font-size: 3rem;
 	}
+	.adress__box {
+		flex-direction: row;
+		
+	}
+	.social__adress-box {
+		margin-left: 1em;
+	}
 	.social__adress {
-		margin: 1em;
-		font-size: 2rem;
+		font-size: 3rem;
+	}
+	.fa-phone-alt {
+		margin-bottom: 2em;
 	}
 }
