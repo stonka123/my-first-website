@@ -10,6 +10,7 @@ const showNav = () => {
 	navMobileItem.forEach(item => {
 		item.addEventListener('click', () => {
 			navMobile.classList.remove('mobile-active')
+			document.body.classList.remove('sticky-body')
 		})
 	})
 }
