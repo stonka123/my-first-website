@@ -40,7 +40,7 @@ body {
 }
 .header__img {
 	position: absolute;
-	background-image: url(img/P1120157.JPG);
+	background-image: url(../img/P1120157.JPG);
 	background-position: center;
 	background-size: cover;
 	background-attachment: center;
