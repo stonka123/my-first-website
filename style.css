@@ -10,8 +10,6 @@ html {
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.6rem;
-
-	/* background-color: #333; */
 }
 
 .wrapper {
@@ -24,6 +22,7 @@ body {
 .sticky-body {
 	overflow: hidden;
 }
+
 /* test */
 .header {
 	position: relative;
@@ -39,7 +38,7 @@ body {
 }
 .header__img {
 	position: absolute;
-	background-image: url('./img/P1120157.JPG');
+	background-image: url('./img/header_small.jpg');
 	background-position: center;
 	background-size: cover;
 	background-attachment: center;
@@ -70,14 +69,14 @@ body {
 	color: #fff;
 	opacity: 0.6;
 }
+
 .header__btn {
 	position: absolute;
 	font-size: 20px;
 	padding: 0.5em;
-	bottom: 20px;
 	color: #fff;
-	z-index: 1000;
 	text-decoration: none;
+	bottom: 20px;
 }
 .mobile {
 	position: fixed;
@@ -133,6 +132,11 @@ body {
 	margin-right: 10px;
 	font-size: 2rem;
 	color: #fff;
+}
+.green-bars-color,
+.green-bars-color::after,
+.green-bars-color::before {
+	background-color: rgb(65, 155, 65);
 }
 /* aboutus section */
 .section-heading {
@@ -533,6 +537,9 @@ tbody tr td {
 	.social__map {
 		display: none;
 	}
+	.footer_box {
+		font-size: 2rem;
+	}
 }
 @media (min-width: 992px) {
 	.hamburger {
@@ -543,6 +550,9 @@ tbody tr td {
 	}
 	.header__title {
 		font-size: 6.2rem;
+	}
+	.header__img {
+		background-image: url('./img/header_big.JPG');
 	}
 	.nav__desktop {
 		position: absolute;
@@ -627,5 +637,8 @@ tbody tr td {
 	}
 	.fa-phone-alt {
 		margin-bottom: 2em;
+	}
+	.footer_box {
+		font-size: 2.4rem;
 	}
 }
